@@ -17,4 +17,6 @@ My homeworks
 
 [Lesson 15](https://andrewsushko1997.github.io/Lesson_15/Lesson_15/) - Pseudo-elements
 
-[Lesson 16](https://andrewsushko1997.github.io/Lesson_14/) - Slider
+[Lesson 16](https://andrewsushko1997.github.io/Lesson_16/) - Slider
+
+[Lesson 17](https://andrewsushko1997.github.io/Lesson_17/) - Modal window
