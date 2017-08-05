@@ -261,6 +261,74 @@ section {
 	}
 }
 
+
+/* Price */
+
+.price {
+	background: @icon-color url(../img/price/price-bg.jpg) center;
+
+	&-header {
+		text-align: center;
+		color: @light;
+		margin-bottom: 9rem;
+		h2 {
+			margin-bottom: 5rem;
+			font-size: 3.6rem;
+			.bold();
+		}
+		p {
+			font-size: 1.8rem;
+		}
+	}
+	&-wrap-btn {
+		text-align: right;
+	}
+
+	&-btn {
+		margin-top: 5rem;
+	}
+
+	&-box {
+		text-align: center;
+		background-color: @light;
+		padding: 4rem 3rem;
+
+		h4 {
+			margin-bottom: 3.5rem;
+			font-size: 1.9rem;
+			.bold();
+		}
+		p {
+			font-size: 1.9rem;
+			.bold();
+			strong {
+				font-size: 3rem;
+			}
+		}
+		img {
+			width: 100%;
+			display: inline-block;
+			max-width: 28rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&-list {
+		padding: 0;
+		list-style: none;
+		min-height: 12rem;
+		li::before {
+			content: '';
+			display: inline-block;
+			width: 1.2rem;
+			height: 1.2rem;
+			background: #fff url(../img/price/checked.svg) center no-repeat;
+			margin-right: 1rem;
+		}
+	}
+}
+
+
 /* Modal window */
 
 .popup {
@@ -319,6 +387,18 @@ section {
 	.slick-active {
 		&:focus {
 		outline: none;
+		}
+	}
+
+	.price {
+		&-header {
+			margin-bottom: 0;
+		}
+		&-wrap-btn {
+			text-align: center;
+		}
+		&-box {
+			margin-top: 4rem;
 		}
 	}
 }
