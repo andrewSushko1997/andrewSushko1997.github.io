@@ -55,7 +55,7 @@ a:hover {
 	text-decoration: none;
 }
 
-button, input, a {
+button, input, a, textarea {
 	&:focus {
 		outline: none;
 	}
@@ -261,6 +261,49 @@ section {
 	}
 }
 
+/* Modal window */
+
+.popup {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+
+	&-form {
+		padding: 0;
+	}
+
+	&-close {
+		position: absolute;
+		top: -1.5rem;
+		right: -3rem;
+		font-size: 3rem;
+		border: none;
+		background-color: transparent;
+		text-align: center;
+		color: white;
+	}
+
+	&-header {
+		.bold();
+		font-size: 1.8rem;
+	}
+
+	&-content {
+		position: fixed;
+		left: 50%;
+		top: 5%;
+		transform: translateX(-50%);
+		background-color: @light;
+		padding: 4rem 5rem;
+		text-align: center;
+	}
+}
 
 @media (max-width: 991px) {
 	.main {
