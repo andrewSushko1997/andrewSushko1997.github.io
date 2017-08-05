@@ -87,6 +87,9 @@ body {
 	background: linear-gradient(to right, #8f0b01, #c41f03, #8f0b01);
 	box-shadow: 0px 8px 16px #000;
 }
+.sign-btn:focus {
+	outline: none;
+}
 .sign-btn::after {
 	content: '';
 	position: absolute;
