@@ -11,7 +11,7 @@ My homeworks
 
 [Lesson 13](https://andrewSushko1997.github.io/Lesson_13/) - Lesson 13 homework(HTML+CSS form Pixel Perfect)
 
-[Lesson 13 Project](https://andrewsushko1997.github.io/Lesson_13_Project/) - Header of the site (Adaptive) + Slider
+[Lesson 13 Project](https://andrewsushko1997.github.io/Lesson_13_Project/) - Header of the site (Adaptive) + Slider + Modal window
 
 [Lesson 14](https://andrewsushko1997.github.io/Lesson_14/) - Fonts
 
