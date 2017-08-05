@@ -1,10 +1,18 @@
-body {
+
+.main {
 	background: #fff url(../img/bg.jpg) center no-repeat;
 	background-size: cover;
+	height: 100vh;
+	z-index: -2;
 }
-.main {
+.nav {
 	margin-top: 5%;
 }
+.wrap {
+	position: relative;
+	z-index: 1;
+}
+
 .nav-tabs>li.active>a, 
 .nav-tabs>li.active>a:focus, 
 .nav-tabs>li.active>a:hover {
@@ -33,6 +41,7 @@ body {
 .tab-content {
 	border: 25px solid #03a6dc;
 	border-radius: 4px;
+	z-index: 0;
 }
 .item a {
 	color: #000;
@@ -87,9 +96,6 @@ body {
 	background: linear-gradient(to right, #8f0b01, #c41f03, #8f0b01);
 	box-shadow: 0px 8px 16px #000;
 }
-.sign-btn:focus {
-	outline: none;
-}
 .sign-btn::after {
 	content: '';
 	position: absolute;
@@ -99,7 +105,9 @@ body {
   border-top: 15px solid #8f0b01; /* Добавляем треугольник */
   border-left: 15px solid #8f0b01;
   z-index: -1;
-
+}
+.sign-btn:focus {
+	outline: none;
 }
 .sign-btn:hover {
 	background: linear-gradient(to right, #c41f03, #8f0b01, #c41f03);
