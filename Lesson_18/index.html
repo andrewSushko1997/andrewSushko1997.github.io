@@ -16,6 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -31,43 +32,47 @@
 
   <body>
 <div class="main">
+<button class="animate-btn">Log In</button>
 <div class="wrap">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-					 <!-- Nav tabs -->
-			  <ul class="nav nav-tabs">
-			    <li class="item active"><a href="#sign-in" data-toggle="tab">Sign-in</a></li>
-			    <li class="item"><a href="#sign-up" data-toggle="tab">Sign-up</a></li>
-			    
-			  </ul>
-			
-			  <!-- Tab panes -->
-			  <div class="tab-content">
-			    <div  class="tab-pane active" id="sign-in">
-			    	<div class="main-content">
-			    		<form action="#">
-			    			<input class="text" type="text" placeholder="Username">
-			    			<input class="text" type="text" placeholder="Password">
-			    			<a href="#">Forgot your password?</a>
 
-								<div class="check-area">
-									<input class="checkbox" type="checkbox"> <span>Remember me</span>
-								</div>
-								<button class="sign-btn">Sign-In</button>
-			    		</form>
-			    	</div>
-			    </div>
-			    <div  class="tab-pane" id="sign-up">
-			    	<div class="main-content sign-up-content">
-			    		<form action="#">
-			    			<input class="text" type="text" placeholder="Username">
-			    			<input class="text" type="text" placeholder="Password">
-								<button class="sign-btn sign-up-btn">Sign-Up</button>
-			    		</form>
-			    	</div>
-			    </div>
-			  </div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+<div class="box animated slideInDown">
+						 <!-- Nav tabs -->
+				  <ul class="nav nav-tabs">
+				    <li class="item active"><a href="#sign-in" data-toggle="tab">Sign-in</a></li>
+				    <li class="item"><a href="#sign-up" data-toggle="tab">Sign-up</a></li>
+				    
+				  </ul>
+				
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div  class="tab-pane active" id="sign-in">
+				    	<div class="main-content">
+				    		<form action="#">
+				    			<input class="text" type="text" placeholder="Username">
+				    			<input class="text" type="text" placeholder="Password">
+				    			<a href="#">Forgot your password?</a>
+	
+									<div class="check-area">
+										<input class="checkbox" type="checkbox"> <span>Remember me</span>
+									</div>
+									<button class="sign-btn">Sign-In</button>
+				    		</form>
+				    	</div>
+				    </div>
+				    <div  class="tab-pane" id="sign-up">
+				    	<div class="main-content sign-up-content">
+				    		<form action="#">
+				    			<input class="text" type="text" placeholder="Username">
+				    			<input class="text" type="text" placeholder="Password">
+									<button class="sign-btn sign-up-btn">Sign-Up</button>
+				    		</form>
+				    	</div>
+				    </div>
+				  </div>
+				  </div>
 				</div>
 			</div>
 		</div>
@@ -81,5 +86,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.animate-btn').on('click', function(event) {
+    			event.preventDefault();
+    			$('.animate-btn').fadeOut();
+    			$('.box').show();
+    		});
+    		$('.sign-btn').on('click', function(event) {
+    			event.preventDefault();
+    			$('.box').fadeOut();
+    			$('.animate-btn').fadeIn();
+    		});
+    	});
+    </script>
   </body>
 </html>
