@@ -261,6 +261,74 @@ section {
   background: #ffffff url(../img/price/checked.svg) center no-repeat;
   margin-right: 1rem;
 }
+/* Feedback */
+.feedback {
+  background: #ffffff url(../img/feedback/feedback-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.feedback-header h2 {
+  text-align: center;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 10rem;
+}
+.feedback-prev-btn {
+  left: -4rem;
+  background: #ffffff url(../img/feedback/left.svg) center no-repeat;
+}
+.feedback-next-btn {
+  right: -4rem;
+  background: #ffffff url(../img/feedback/right.svg) center no-repeat;
+}
+.feedback-slider {
+  padding: 5rem 6rem;
+  background-color: #ffffff;
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+.feedback-slider-btn {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  background-color: #54a311;
+  width: 4rem;
+  height: 5rem;
+  color: #ffffff;
+}
+.feedback-info {
+  font-size: 1.6rem;
+}
+.feedback .media {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+}
+.feedback .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback-text {
+  position: relative;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: 2px solid #54a311;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+.feedback-text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: 4rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #54a311;
+  background-color: #ffffff;
+  border-bottom: none;
+  border-top-right-radius: 2rem;
+}
 /* Modal window */
 .popup {
   position: fixed;
