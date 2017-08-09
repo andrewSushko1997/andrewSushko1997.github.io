@@ -265,6 +265,7 @@ section {
 .feedback {
   background: #ffffff url(../img/feedback/feedback-bg.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
 }
 .feedback-header h2 {
   text-align: center;
@@ -300,6 +301,19 @@ section {
 .feedback-info {
   font-size: 1.6rem;
 }
+.feedback-form {
+  margin-top: 6rem;
+  padding: 5rem 10rem;
+  text-align: center;
+}
+.feedback-form h3 {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback-form-btn {
+  max-width: 30rem;
+}
 .feedback .media {
   margin-top: 5rem;
   font-size: 1.6rem;
@@ -328,6 +342,12 @@ section {
   background-color: #ffffff;
   border-bottom: none;
   border-top-right-radius: 2rem;
+}
+.feedback .hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30%;
 }
 /* Modal window */
 .popup {
@@ -368,6 +388,14 @@ section {
   padding: 4rem 5rem;
   text-align: center;
 }
+@media (max-width: 1049px) {
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -390,6 +418,9 @@ section {
   }
   .price-box {
     margin-top: 4rem;
+  }
+  .feedback .fotorama {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 767px) {
