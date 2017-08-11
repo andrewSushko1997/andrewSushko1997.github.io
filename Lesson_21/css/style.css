@@ -1,0 +1,19 @@
+section {
+	height: 100vh;
+	background: #fff url(../img/bg.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.planet {
+	position: absolute;
+	height: 400px;
+	top: 10%;
+	left: 20%;
+}
+
+.rocket {
+	position: absolute;
+	height: 200px;
+	bottom: -10%;
+	right: 15%;
+}
