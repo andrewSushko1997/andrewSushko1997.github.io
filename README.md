@@ -26,3 +26,5 @@ My homeworks
 [Lesson 20](https://andrewsushko1997.github.io/Lesson_20/) - Video background
 
 [Lesson 21](https://andrewsushko1997.github.io/Lesson_21/) - Parallax effect
+
+[Lesson 22](https://andrewsushko1997.github.io/Lesson_22/) - Maps
