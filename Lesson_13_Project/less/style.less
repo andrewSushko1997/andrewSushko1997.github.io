@@ -40,6 +40,7 @@
 @light-bg: #f9e9f1;
 @light: #fff;
 @bad-list: #e8e8e8;
+@upsell-color: #286b0a;
 
 /* Basic settings */
 
@@ -580,6 +581,107 @@ section {
 	}
 }
 
+/* Materials */
+
+.materials {
+	background: #fff url(../img/materials/materials-bg.jpg) center no-repeat;
+	background-size: cover;
+	&-header {
+		text-align: center;
+		h2 {
+			margin-bottom: 5rem;
+			.bold();
+			font-size: 3.6rem;
+		}
+		p {
+			font-size: 2rem;
+			margin-bottom: 7rem;
+		}
+	}
+	&-info {
+		margin-top: 7.5rem;
+		font-size: 2rem;
+		text-align: center;
+
+		a {
+			color: @icon-color;
+			text-decoration: none;
+			&:hover {
+				color: darken(@icon-color, 10%);
+			}
+		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	&-block {
+		p {
+			min-height: 2.5rem;
+		}
+	}
+	&-link {
+		display: inline-block;
+		margin-top: 2.7rem;
+		color: @icon-color;
+		border-bottom: 1px dotted @icon-color;
+		font-size: 1.6rem;
+		&:hover {
+			color: darken(@icon-color, 10%);
+		}
+	}
+
+}
+
+/* Tour */
+
+.tour {
+	background: #fff url(../img/tour-bg.jpg) center no-repeat;
+	background-size: cover;
+	&-subtitle {
+		font-size: 2rem;
+	}
+	&-form-button {
+		padding: 2rem 3rem;
+		font-size: 1.4rem;
+	}
+}
+
+/* Upsell */
+
+.upsell {
+	background-color: @upsell-color;
+	text-align: center;
+	color: @light;
+	&-header {
+		
+		h2 {
+			margin-bottom: 5rem;
+			.bold();
+			font-size: 3.6rem;
+		}
+		p {
+			margin-bottom: 7rem;
+			font-size: 2rem;
+		}
+	}
+	&-box {
+		img {
+			display: inline-block;
+			width: 100%;
+			max-width: 30rem;
+		}
+		&-item {
+			margin-bottom: 3rem;
+		}
+		p {
+			margin: 3rem 0;
+			font-size: 2rem;
+			.bold();
+		}
+	}
+}
+
 /* Modal window */
 
 .popup {
@@ -681,6 +783,10 @@ section {
 		&-girl {
 			display: none;
 		}
+	}
+	.tour {
+		background: none;
+		background-color: @light-bg;
 	}
 }
 
