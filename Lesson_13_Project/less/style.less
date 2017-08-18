@@ -682,6 +682,45 @@ section {
 	}
 }
 
+/* Contacts */
+
+.contacts {
+	background: #fff url(../img/contacts-bg.jpg) center no-repeat;
+	background-size: cover;
+
+	h2 {
+		.bold();
+	}
+	p {
+		margin: 2rem 0;
+		font-size: 1.8rem;
+	}
+	&-link {
+		display: inline-block;
+		color: @text;
+		border-bottom: 1px dotted;
+		&:hover {
+			color: lighten(@text, 10%);
+		}
+
+	}
+	&-form {
+		&-btn {
+			padding: 2rem;
+		}
+	}
+}
+
+.footer {
+	padding: 2rem 0;
+	p {
+		text-align: center;
+	}
+	.dev-logo {
+		text-align: right;
+	}
+}
+
 /* Modal window */
 
 .popup {
@@ -787,6 +826,14 @@ section {
 	.tour {
 		background: none;
 		background-color: @light-bg;
+	}
+	.footer {
+		p {
+			margin: 3rem 0;
+		}
+		.dev-logo {
+			text-align: center;
+		}
 	}
 }
 

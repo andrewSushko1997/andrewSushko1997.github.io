@@ -571,6 +571,38 @@ section {
   font-size: 2rem;
   font-family: 'ProximaNova_bold', sans-serif;
 }
+/* Contacts */
+.contacts {
+  background: #ffffff url(../img/contacts-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts p {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #292929;
+  border-bottom: 1px dotted;
+}
+.contacts-link:hover {
+  color: #434343;
+}
+.contacts-form-btn {
+  padding: 2rem;
+}
+.footer {
+  padding: 2rem 0;
+}
+.footer p {
+  text-align: center;
+}
+.footer .dev-logo {
+  text-align: right;
+}
 /* Modal window */
 .popup {
   position: fixed;
@@ -656,6 +688,12 @@ section {
   .tour {
     background: none;
     background-color: #f9e9f1;
+  }
+  .footer p {
+    margin: 3rem 0;
+  }
+  .footer .dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
