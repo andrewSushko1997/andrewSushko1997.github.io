@@ -1,0 +1,101 @@
+/* Basic settings */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 1.5rem;
+  min-width: 20rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.button:hover {
+  box-shadow: 0 0 10px white;
+  text-shadow: 0 0 5px white;
+  text-decoration: none;
+}
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+/* Main */
+.main {
+  position: relative;
+  padding: 8rem 0;
+  background: #000000 url(../img/main-bg.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  z-index: 1;
+}
+.main-img {
+  margin: 0 auto;
+  width: 15rem;
+  height: 15rem;
+  background: transparent url(../img/avatar.JPG) -7rem no-repeat;
+  background-size: cover;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.main-header {
+  text-align: center;
+}
+.main-header h1 {
+  font-size: 4.5rem;
+}
+.main-info {
+  margin: 4rem 0;
+}
+.main-info ul li {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.main-footer a {
+  display: block;
+  color: white;
+  text-align: center;
+}
+.main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .main-info {
+    text-align: center;
+  }
+  .main-info h2 {
+    margin-bottom: 3rem;
+  }
+  .main-info ul li {
+    list-style: none;
+  }
+}
+@media (max-width: 767px) {
+  .main-info {
+    text-align: center;
+  }
+  .main-info h2 {
+    margin-bottom: 3rem;
+  }
+  .main-info ul li {
+    list-style: none;
+  }
+}
