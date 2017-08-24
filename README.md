@@ -3,7 +3,7 @@
 # Sushko Andrew
 My Portfolio
 
-[Portfolio](https://andrewSushko1997.github.io/Portfolio/) - My portfolio
+[Portfolio](https://andrewSushko1997.github.io/Portfolio/src) - My portfolio
 
 My homeworks
 
