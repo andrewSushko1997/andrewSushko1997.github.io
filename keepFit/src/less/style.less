@@ -50,9 +50,12 @@ a, button {
 /* Main */
 
 .main {
-	background: #000 url(../img/main-bg.jpg) center no-repeat;
+	background: #595d62 url(../img/bg.jpg) center -5rem no-repeat;
 	background-size: cover;
 	padding: 4rem 0;
+	position: relative;
+
+
 	&-adress {
 		.medium();
 		color: @light;
@@ -137,6 +140,70 @@ a, button {
 					right: 3rem;
 					transform: translateY(-50%);
 				}
+			}
+		}
+	}
+	&-name {
+		background-color: rgba(48, 73, 97, 0.78);
+		position: relative;
+		width: 270px;
+		height: 270px;
+		border-radius: 50%;
+		&-info {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -60%);
+			min-width: 18rem;
+			h3 {
+				text-align: center;
+				color: @icons-color;
+				font-size: 1.8rem;
+			}
+			p {
+				color: @light;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&-contacts {
+		margin-top: 4rem;
+		p {
+			.medium();
+			color: @p-color;
+			font-size: 1.5rem;
+		}
+		a {
+			display: inline-block;
+			margin-bottom: 1rem;
+			position: relative;
+			margin-left: 3rem;
+			color: @light;
+			&:hover {
+				text-decoration: none;
+				color: darken(@light, 20%);
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				left: -3rem;
+				width: 18px;
+				height: 18px;
+			}
+		}
+		.viber {
+			&:before {
+				background: url(../img/viber.png) center no-repeat;
+			}
+		}
+		.whatsapp {
+			&:before {
+				background: url(../img/whats.png) center no-repeat;
+			}
+		}
+		.telegram {
+			&:before {
+				background: url(../img/telegram.png) center no-repeat;
 			}
 		}
 	}
